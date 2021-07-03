@@ -1,0 +1,143 @@
+.inti {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    background-color: rgb(2,172,195);
+    border-radius: 20px;
+    height: 600px;
+}
+header h1 {
+    font-family: "OpenSans-Regular";
+    font-size: 25px;
+    color: white;
+}
+.inti .stopwatch {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+.inti .stopwatch .time {
+    width: 100%;
+    /*background-color: dodgerblue;*/
+    margin-top: 5%;
+    height: 200px;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+}
+.inti .stopwatch .time .box {
+    width: 33.3%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.inti .stopwatch .time .box h1 {
+    font-family: "OpenSans-Regular";
+    text-align: center;
+    color: rgb(117,117,117);
+}
+.inti .stopwatch .time .pop-up {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(239,239,239,0.5);
+}
+.inti .stopwatch .time .pop-up {
+    display: grid;
+    align-items: center;
+}
+.inti .stopwatch .time .pop-up h1 {
+    font-family: "OpenSans-Regular";
+    text-align: center;
+    font-size: 25px;
+}
+.inti .stopwatch .time .pop-up.tampilan {
+    display: none;
+}
+.inti .stopwatch .time .box input[type=number] {
+    width: 55%;
+    height: 80px;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15%;
+}
+.inti .stopwatch .time .start {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inti .stopwatch .time .paused {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(239,239,239,0.5);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.inti .stopwatch .time .paused h1 {
+    font-family: "OpenSans-Regular";
+    text-align: center;
+}
+.inti .stopwatch .time .start img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("OpenSans-Regular.ttf");
+}
+
+
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .inti {
+        width: 100%;
+    }
+    .inti .stopwatch {
+        width: 95%;
+    }
+    .inti .stopwatch .time .box h1 {
+        font-size: 18px;
+    }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
